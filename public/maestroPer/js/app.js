@@ -1,0 +1,1 @@
+angular.module('maestroPerfil', ['ngRoute', 'chart.js']);

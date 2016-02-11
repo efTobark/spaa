@@ -1,0 +1,44 @@
+<div class="col-lg-6">
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            <h1 class="panel-title">Alumnos</h1>
+        </div>
+        <div class="panel-body">
+            <div class="list-group">
+              <a ng-click="cambiarDetalle(alumno)" ng-repeat="alumno in alumnos" class="list-group-item">
+                  {{alumno.nombre + ' ' + alumno.ap_paterno + ' ' + alumno.ap_materno}}
+              </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="col-lg-6">
+    <div class="panel panel-warning">
+        <div class="panel-heading">
+            <h1 class="panel-title">Detalles del alumno</h1>
+        </div>
+        <div class="panel-body">
+            <div class="list-group">
+                <a class="list-group-item">
+                    Nombre: {{alumno.nombre + ' ' + alumno.ap_paterno + ' ' + alumno.ap_materno}}
+                </a>
+                <a class="list-group-item">
+                    Matrícula: {{'00'+alumno.id}}
+                </a>
+                <a class="list-group-item">
+                    Grado: {{alumno.grado}}
+                </a>
+                <a class="list-group-item">
+                    Grupo: {{alumno.grupo.salon}} 
+                </a>
+                <a class="list-group-item">
+                    Padre: {{alumno.padre.nombre + ' ' + alumno.padre.ap_paterno}}
+                </a>
+                <a class="list-group-item">
+                    Madre: {{alumno.madre.nombre + ' ' + alumno.madre.ap_paterno}}
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

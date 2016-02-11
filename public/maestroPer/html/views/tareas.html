@@ -1,0 +1,53 @@
+<div class="col-lg-6">
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            <h1 class="panel-title">Tareas</h1>
+        </div>
+        <div class="panel-body">
+            <div class="list-group">
+              <a ng-click="cambiarTarea(tarea)" ng-repeat="tarea in tareas" class="list-group-item">
+                  {{tarea.titulo}}
+              </a>
+            </div>
+        </div>
+        <div class="row">
+            <canvas id="doughnut" class="chart chart-doughnut"
+              chart-data="datos" chart-labels="etiquetas">
+            </canvas> 
+        </div>
+    </div>
+</div>
+
+
+<div class="col-lg-6">
+    <div class="panel panel-warning">
+        <div class="panel-heading">
+            <h1 class="panel-title">Detalles de la tarea</h1>
+        </div>
+        <div class="panel-body">
+            <div class="list-group">
+                <a class="list-group-item">
+                    Materia: {{tarea.materia.nombre}}
+                </a>
+                <a class="list-group-item">
+                    Título: {{tarea.titulo}}
+                </a>
+                <a class="list-group-item">
+                    Asignada el {{tarea.fecha_asignacion}}
+                </a>
+                <a class="list-group-item">
+                    Fecha de entrega: {{tarea.fecha_entrega}}
+                </a>
+                <a class="list-group-item">
+                    Se encuentra: {{tarea.estado}} 
+                </a>
+                <a class="list-group-item">
+                    Tipo: {{tarea.tipo}}
+                </a>
+                <a class="list-group-item">
+                    Descripción: {{tarea.descripcion}} 
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

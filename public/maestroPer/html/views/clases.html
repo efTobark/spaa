@@ -1,0 +1,32 @@
+<div class="col-lg-6">
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            <h1 class="panel-title">Clases</h1>
+        </div>
+        <div class="panel-body">
+            <div class="list-group">
+              <a ng-click="cambiarClase(clase)" ng-repeat="clase in clases" class="list-group-item">
+                  <!-- {{clase.materia.nombre + ' / ' + clase.grupo.salon}} -->
+                  {{clase.materia.nombre + ' / ' + clase.grupo.salon}}
+              </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="col-lg-6">
+    <div class="panel panel-warning">
+        <div class="panel-heading">
+            <h1 class="panel-title">Alumnos de la clase</h1>
+        </div>
+        <div class="panel-body">
+            <div class="list-group">
+                <a class="list-group-item" ng-repeat="alumno in alumnos">
+	              <!-- {{clase.materia.nombre + ' / ' + clase.grupo.salon}} -->
+	              {{alumno.nombre + ' ' + alumno.ap_paterno + ' ' + alumno.ap_paterno}}  
+                </a>
+
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,26 @@
+<div class="col-lg-offset-3 col-lg-6">
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            <h1 class="panel-title">Mi Perfil</h1>
+        </div>
+        <div class="panel-body">
+            <div class="list-group">
+                <figure class="col-lg-offset-3">
+                    <img class="avatar-perfil" src="common/img/avatar.jpg" alt="">
+                </figure>
+                <span class="list-group-item">
+                    Nombre: {{usuario.nombre + ' ' + usuario.ap_paterno + ' ' + usuario.ap_materno}}
+                </span>
+                <span class="list-group-item">
+                    Matrícula: 00{{usuario.id}}
+                </span>
+                <span class="list-group-item">
+                    Área: {{usuario.id_area}}
+                </span>
+                <span class="list-group-item">
+                    Celular: {{usuario.celular}}
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
